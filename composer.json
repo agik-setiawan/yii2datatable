@@ -20,5 +20,5 @@
         "php": ">=5.4.0",
         "agik/yii2datatable": "dev-master"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
