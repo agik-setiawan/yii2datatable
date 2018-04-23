@@ -1,6 +1,7 @@
 {
     "name": "agik/yii2datatable",
-    "description": "datatables for model yii2",
+    "description": "datatable yii2 models",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
