@@ -1,0 +1,23 @@
+{
+    "name": "agik/yii2datatables",
+    "description": "datatables for model yii2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agik-setiawan",
+            "email": "setiawanagik@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/agik-setiawan/yii2datatable",
+    "type": "yii2-extension",
+    "autoload": {
+        "psr-4": {
+            "YiiDatatables\\": "src/"
+        }
+    },
+    "require":{
+        "php":">7.0",
+        "agik/yii2datatables": "dev-master"
+    },
+    "minimum-stability": "dev"
+}
