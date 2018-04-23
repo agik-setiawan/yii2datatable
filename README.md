@@ -1,9 +1,8 @@
-# yii2datatable
-datatables model yii2
-#using
+#Example
 use app\models\Users;
 use YiiDatatables\DataTablesModel;
 
+##
   public function getUsers(){
     $dt=new DataTablesModel;
     $mdl=Users::find();
