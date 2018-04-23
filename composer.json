@@ -17,7 +17,7 @@
     },
     "require":{
         "php":">7.0",
-        "agik/yii2datatables": "dev-master"
+        "agik/yii2datatable": "dev-master"
     },
     "minimum-stability": "dev"
 }
