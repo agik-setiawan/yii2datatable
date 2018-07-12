@@ -32,7 +32,7 @@ public function getTable($model){
 		$columnsNameSelect=ltrim($columnsNameSelect,", ");
 	}
 
-	$totalData=count($mdl->all());
+	$totalData=$mdl->count();
 	$totalFiltered=$totalData;
 	if( !empty($request['search']['value']) ) {
 		$sql="";
@@ -47,7 +47,8 @@ public function getTable($model){
 		}
 		$mdl->andWhere($sql);
 	}
-	$totalFiltered=count($mdl->all());
+	$totalFiltered=$mdl->count();
+	// $totalFiltered=count($mdl->all());
 
 	$numCol=$request['order'][0]['column'];
 	if($numCol>1){
