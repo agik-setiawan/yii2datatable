@@ -1,11 +1,11 @@
 <?php
-namespace YiiDatatables;
+namespace agik\yii2datatable;
 use Yii;
 use yii\db\Query;
 /**
 * 
 */
-class DataTablesModel
+class Table
 {
 
 /**
