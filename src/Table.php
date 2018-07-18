@@ -1,22 +1,24 @@
 <?php
 namespace agik\yii2datatable;
 use Yii;
-use yii\db\Query;
-/**
-* 
-*/
+
 class Table
 {
+public $model;
 
+public function __construct($model){
+$this->model=$model;
+}
 /**
 * Datatables
 */
-/**
-* Datatables
-*/
-public function getTable($model){
-	$mdl=$model['model'];
+public function getRow(){
+	\Yii::$app->response->format=\Yii\web\Response::FORMAT_JSON;
+	$mdl=$this->model;
 	$request=$_REQUEST;
+	if(!isset($request['draw'])){
+		return ['data'=>$mdl->asArray()->all()];
+	}
 	$columns=$request['columns'];
 	$columnsNameSelect="";
 	$columnsNameSelectArray=[];
